@@ -6,3 +6,9 @@ export const ADDFIVE = 'ADDFIVE';
 export const LESSFIVE = 'LESSFIVE';
 export const STORE_RESULT= 'STORE_RESULT';
 export const DELETE_RESULT= 'DELETE_RESULT';
+
+export const increment = () => {
+    return {
+        type: INCREMENT
+    };
+};
