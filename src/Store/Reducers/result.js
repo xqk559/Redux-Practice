@@ -15,6 +15,8 @@ const reducer = (state = initialState, action) => {
         case actionTypes.STORE_RESULT:
             return updateObject(state, {results: state.results.concat({id: new Date(), value: action.result})});
         case actionTypes.DELETE_RESULT:
+            // Make utility functions like deleteResult above to keep switch lean
+            // Alternative:
             // const id = 2;
             // const newArray = [...state.results];
             // newArray.splice(id, 1)
